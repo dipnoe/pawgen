@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
+from blog.models import Blog
+from main.models import Service, Category
+
 
 # Create your views here.
 def contacts(request):
@@ -12,4 +15,10 @@ def contacts(request):
 
 
 def home(request):
-    return render(request, 'core/home.html')
+    blog_top = Blog.objects.all().values('title', 'body')[:3]
+    service = Service.objects.filter(is_available=True)
+    context = {
+        'blog': blog_top,
+        'service': service
+    }
+    return render(request, 'core/home.html', context)

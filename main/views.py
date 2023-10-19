@@ -6,13 +6,6 @@ from main.forms import CategoryForm, ServiceForm
 from main.models import Category, Service
 
 
-# Create your views here.
-class CategoryCreateView(CreateView):
-    model = Category
-    form_class = CategoryForm
-    success_url = reverse_lazy('core:home')
-
-
 class CategoryListView(ListView):
     model = Category
 
@@ -21,37 +14,23 @@ class CategoryDetailView(DetailView):
     model = Category
 
 
-class CategoryUpdateView(UpdateView):
-    model = Category
-    form_class = CategoryForm
-    success_url = reverse_lazy('core:home')
-
-
-class CategoryDeleteView(DeleteView):
-    model = Category
-    success_url = reverse_lazy('core:home')
-
-
-class ServiceCreateView(CreateView):
-    model = Service
-    form_class = ServiceForm
-    success_url = reverse_lazy('core:home')
-
-
 class ServiceListView(ListView):
+    model = Service
+
+    def get_context_data(self, **kwargs):
+        data = super().get_context_data(**kwargs)
+        data['category'] = Category.objects.get(id=self.kwargs.get('pk'))
+        return data
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        queryset = queryset.filter(category_id=self.kwargs.get('pk'))
+        return queryset
+
+
+class ServiceAllListView(ListView):
     model = Service
 
 
 class ServiceDetailView(DetailView):
     model = Service
-
-
-class ServiceUpdateView(UpdateView):
-    model = Service
-    form_class = ServiceForm
-    success_url = reverse_lazy('core:home')
-
-
-class ServiceDeleteView(DeleteView):
-    model = Service
-    success_url = reverse_lazy('core:home')
