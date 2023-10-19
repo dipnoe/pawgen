@@ -1,27 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contacts</title>
-</head>
-<body>
+{% extends 'core/base.html' %}
+
+{% block content %}
+
 <div class="container">
-    <div class="row gx-5 justify-content-center">
+    <div class="row mt-5 gx-5 justify-content-center">
         <div class="col-6">
             <div class="card">
                 <div class="card-body">
                     <table class="table table-light">
                         <tr>
                             <td class="w-25">Почта</td>
-                            <td>wow@sky.pro</td>
+                            <td>paw@gene.com</td>
                         </tr>
                         <tr>
                             <td class="w-25">Телефон</td>
                             <td>8-800-555-35-35</td>
-                        </tr>
-                        <tr>
-                            <td class="w-25">ИП</td>
-                            <td>Есть</td>
                         </tr>
                     </table>
                 </div>
@@ -57,5 +50,4 @@
     </div>
 </div>
 
-</body>
-</html>
+{% endblock %}
