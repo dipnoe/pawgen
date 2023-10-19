@@ -12,6 +12,7 @@ class Category(models.Model):
     - name (CharField): The name of the category.
     """
     name = models.CharField(max_length=100, verbose_name='Категория')
+    description = models.TextField(verbose_name='Описание', **NULLABLE)
 
     def __str__(self):
         return self.name
