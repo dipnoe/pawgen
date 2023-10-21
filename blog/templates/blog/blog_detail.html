@@ -145,8 +145,9 @@
         </div>
 
         <div class="row g-5">
-            <div class="col-md-8">
+            <div class="col-md-8-justify-content-center">
                 <article class="blog-post">
+                    <img src="{% mediapath object.preview %}" height="50%" width="50%">
                     <h2 class="display-5 link-body-emphasis mb-1">{{ object.title|capfirst }}</h2>
                     <p class="blog-post-meta">{{ object.create_date }}</p>
                     <p>{{ object.body|capfirst }}</p>
