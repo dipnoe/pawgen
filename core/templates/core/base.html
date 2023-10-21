@@ -25,16 +25,25 @@
                 font-size: 3.5rem;
             }
         }
+
+        img.paws {
+            height: 2%;
+            width: 2%;
+        }
     </style>
 
 
     <!-- Custom styles for this template -->
     <link href="{% static 'carousel.css' %}" rel="stylesheet">
     <link href="{% static 'grid.css' %}" rel="stylesheet">
+    {% block styles %}
+    {% endblock %}
+
 </head>
 <body>
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <img class="paws" src="/media/paws.svg">
         <a class="navbar-brand" href="#">PawGene</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,11 +62,15 @@
                         </button>
                         <div class="dropdown-menu">
                             {% for object in categories %}
-                                <a class="dropdown-item" href="{% url 'main:service_category_list' object.pk %}">{{ object.name|capfirst }}</a>
+                                <a class="dropdown-item"
+                                   href="{% url 'main:service_category_list' object.pk %}">{{ object.name|capfirst }}</a>
                             {% endfor %}
                             <a class="dropdown-item" href="{% url 'main:service_all_list' %}">Все услуги</a>
                         </div>
                     </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'blog:blog_list' %}">Блог</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="{% url 'core:contacts' %}">Контакты</a>
@@ -67,15 +80,32 @@
                 <input class="form-control mr-sm-2" type="text" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
             </form>
+            <li class="nav-item">
+                {% if user.is_authenticated %}
+                    <div class="btn-group" role="group">
+                        <a class="nav-link" href="{% url 'users:profile' %}">Профиль</a>
+                        <a class="nav-link" href="{% url 'users:logout' %}">Выйти ({{ user.email }})</a>
+                    </div>
+                {% else %}
+                    <div class="btn-group" role="group">
+                        <a class="nav-link" href="{% url 'users:login' %}">Войти</a>
+                        <a class="nav-link" href="{% url 'users:register' %}">Зарегистрироваться</a>
+                    </div>
+                {% endif %}
+            </li>
         </div>
     </nav>
 </header>
+
+
 {% block content %}
 {% endblock %}
-<footer class="container">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2017-2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-</footer>
+
+{#<footer class="container">#}
+{#    <p class="float-right"><a href="#">Back to top</a></p>#}
+{#    <p>&copy; 2017-2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>#}
+{#</footer>#}
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -86,4 +116,5 @@
 
 
 </body>
+
 </html>
