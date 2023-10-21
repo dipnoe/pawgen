@@ -1,0 +1,229 @@
+{% extends 'core/base.html' %}
+{% load tags %}
+{% block styles %}
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+
+        /* stylelint-disable stylistic/selector-list-comma-newline-after */
+
+        .blog-header-logo {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+            font-size: 2.25rem;
+        }
+
+        .blog-header-logo:hover {
+            text-decoration: none;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+        }
+
+        .flex-auto {
+            flex: 0 0 auto;
+        }
+
+        .h-250 {
+            height: 250px;
+        }
+
+        @media (min-width: 768px) {
+            .h-md-250 {
+                height: 250px;
+            }
+        }
+
+        /* Pagination */
+        .blog-pagination {
+            margin-bottom: 4rem;
+        }
+
+        /*
+         * Blog posts
+         */
+        .blog-post {
+            margin-bottom: 4rem;
+        }
+
+        .blog-post-meta {
+            margin-bottom: 1.25rem;
+            color: #727272;
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap"
+          rel="stylesheet">
+
+
+{% endblock %}
+{% block content %}
+
+    <main class="container">
+        <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+            <div class="col-lg-6 px-0">
+                <h1 class="display-4 fst-italic">PawBlog</h1>
+            </div>
+        </div>
+        <div class="row mb-2">
+            {% for object in object_list|slice:":2" %}
+
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col-6 p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary-emphasis">{{ object.tag|capfirst }}</strong>
+                            <h3 class="mb-0">{{ object.title|capfirst }}</h3>
+                            <div class="mb-1 text-body-secondary">{{ object.create_date|nice_date }}</div>
+                            <p class="card-text mb-auto">{{ object.body|slice:50 }}</p>
+                            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                                Продолжить чтение
+                            </a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                                 role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                 focusable="false"><title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"/>
+                                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+            <div class="row g-5">
+                <div class="col-md-8">
+                    <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                        Полезные посты
+                    </h3>
+                    {% for object in object_list %}
+                        {% if object.tag == 'useful material' %}
+                            <article class="blog-post">
+                                <h2 class="display-5 link-body-emphasis mb-1">{{ object.title|capfirst }}</h2>
+                                <p class="blog-post-meta">{{ object.create_date }}</p>
+
+                                <p>{{ object.body|capfirst }}</p>
+                                <hr>
+                                <sup>Просмотрено {{ object.views_count }} раз</sup>
+                            </article>
+
+                        {% endif %}
+                    {% endfor %}
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="position-sticky" style="top: 2rem;">
+                        <div class="p-4 mb-3 bg-body-tertiary rounded">
+                            <h4 class="fst-italic">О PawGene</h4>
+                            <p class="mb-0">Мы - люди, которые любят животных.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="fst-italic">PawEvents</h4>
+                            <ul class="list-unstyled">
+                                {% for object in object_list %}
+                                    {% if object.tag == 'event' %}
+                                        <li>
+                                            <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                                               href="{% url 'blog:blog_detail' object.pk %}">
+                                                <svg class="bd-placeholder-img" width="100%" height="96"
+                                                     xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                     preserveAspectRatio="xMidYMid slice" focusable="false">
+                                                    <rect width="100%" height="100%" fill="#777"/>
+                                                </svg>
+                                                <div class="col-lg-8">
+                                                    <h6 class="mb-0">{{ object.title|capfirst }}</h6>
+                                                    <small class="text-body-secondary">{{ object.create_date }}</small>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+{% endblock %}
