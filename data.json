@@ -1,0 +1,1735 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2023-10-18T09:29:19.954Z",
+      "user": 2,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "тестовая категория",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2023-10-18T09:29:35.415Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "тестовая услуга",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2023-10-19T09:03:06.285Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Запись 1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2023-10-19T09:03:25.574Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Запись 2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2023-10-19T09:03:37.896Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "Запись 3",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2023-10-19T10:58:34.528Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "34",
+      "object_repr": "услуга 2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2023-10-19T10:58:49.633Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "35",
+      "object_repr": "услуга 3",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2023-10-19T11:54:30.986Z",
+      "user": 2,
+      "content_type": 7,
+      "object_id": "34",
+      "object_repr": "тестовая категория 2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2023-10-19T12:54:16.478Z",
+      "user": 2,
+      "content_type": 7,
+      "object_id": "34",
+      "object_repr": "тестовая категория 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2023-10-19T12:54:27.768Z",
+      "user": 2,
+      "content_type": 7,
+      "object_id": "35",
+      "object_repr": "test category",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2023-10-19T14:46:41.431Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "36",
+      "object_repr": "новая тестовая услуга",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2023-10-21T09:29:41.338Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "важное событие",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2023-10-21T09:44:18.137Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "полезный материал",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2023-10-21T09:45:58.930Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "полезный материал",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0434\\u0435\\u0440\\u0436\\u0438\\u043c\\u043e\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2023-10-21T10:24:52.216Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "важное событие",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2023-10-21T10:25:05.822Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "полезный материал",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2023-10-23T06:30:20.588Z",
+      "user": 2,
+      "content_type": 11,
+      "object_id": "5",
+      "object_repr": "собака Bob пользователя dipnoe@gmail.com",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0423\\u0441\\u043b\\u0443\\u0433\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2023-10-23T06:31:21.357Z",
+      "user": 2,
+      "content_type": 11,
+      "object_id": "5",
+      "object_repr": "собака Bob пользователя dipnoe@gmail.com",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0423\\u0441\\u043b\\u0443\\u0433\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2023-10-23T13:19:09.023Z",
+      "user": 2,
+      "content_type": 6,
+      "object_id": "42",
+      "object_repr": "test@test.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2023-10-23T13:19:09.104Z",
+      "user": 2,
+      "content_type": 6,
+      "object_id": "41",
+      "object_repr": "ficus111199@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2023-10-23T13:34:44.638Z",
+      "user": 2,
+      "content_type": 6,
+      "object_id": "43",
+      "object_repr": "ficus111199@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2023-10-23T13:57:13.755Z",
+      "user": 2,
+      "content_type": 6,
+      "object_id": "45",
+      "object_repr": "ficus111199@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2023-10-24T04:14:47.615Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "6",
+      "object_repr": "Заказ 6 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2023-10-24T04:14:47.712Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "5",
+      "object_repr": "Заказ 5 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2023-10-24T04:14:47.759Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "Заказ 4 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2023-10-24T04:14:47.778Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "3",
+      "object_repr": "Заказ 3 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2023-10-24T07:50:19.932Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "13",
+      "object_repr": "Заказ 13 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2023-10-24T07:50:19.946Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "12",
+      "object_repr": "Заказ 12 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2023-10-24T07:50:19.956Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "11",
+      "object_repr": "Заказ 11 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2023-10-24T07:50:19.968Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "10",
+      "object_repr": "Заказ 10 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2023-10-24T07:50:19.979Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "9",
+      "object_repr": "Заказ 9 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2023-10-24T07:50:19.990Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "8",
+      "object_repr": "Заказ 8 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2023-10-24T07:50:20.001Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "7",
+      "object_repr": "Заказ 7 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2023-10-24T07:50:20.012Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "2",
+      "object_repr": "Заказ 2 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2023-10-24T08:07:03.091Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "20",
+      "object_repr": "Заказ 20 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2023-10-24T08:07:03.108Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "19",
+      "object_repr": "Заказ 19 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2023-10-24T08:07:03.119Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "18",
+      "object_repr": "Заказ 18 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2023-10-24T08:07:03.130Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "17",
+      "object_repr": "Заказ 17 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2023-10-24T08:07:03.141Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "16",
+      "object_repr": "Заказ 16 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+      "action_time": "2023-10-24T08:07:03.152Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "15",
+      "object_repr": "Заказ 15 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+      "action_time": "2023-10-24T08:07:03.163Z",
+      "user": 2,
+      "content_type": 10,
+      "object_id": "14",
+      "object_repr": "Заказ 14 пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+      "action_time": "2023-10-24T08:56:03.128Z",
+      "user": 2,
+      "content_type": 11,
+      "object_id": "17",
+      "object_repr": "собака Bob пользователя dipnoe@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+      "action_time": "2023-10-24T08:56:27.507Z",
+      "user": 2,
+      "content_type": 7,
+      "object_id": "35",
+      "object_repr": "test category",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+      "action_time": "2023-10-24T08:56:27.525Z",
+      "user": 2,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "тестовая категория",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+      "action_time": "2023-10-24T08:56:36.155Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "важное событие",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+      "action_time": "2023-10-24T08:56:36.168Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "полезный материал",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+      "action_time": "2023-10-24T08:56:36.179Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "Запись 3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+      "action_time": "2023-10-24T08:56:36.190Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Запись 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+      "action_time": "2023-10-24T08:56:36.201Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Запись 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+      "action_time": "2023-10-24T08:56:54.202Z",
+      "user": 2,
+      "content_type": 6,
+      "object_id": "52",
+      "object_repr": "fetefeb861@wisnick.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+      "action_time": "2023-10-24T08:56:54.218Z",
+      "user": 2,
+      "content_type": 6,
+      "object_id": "46",
+      "object_repr": "ficus111199@gmail.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+      "action_time": "2023-10-24T09:05:51.467Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "Открытие первой лаборатории",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+      "action_time": "2023-10-24T09:13:58.638Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "7",
+      "object_repr": "Забор буккального эпителия у животного: Как это сделать?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+      "action_time": "2023-10-24T09:14:54.238Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "7",
+      "object_repr": "Гайд по сбору слюны",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u0433\\u043e\\u043b\\u043e\\u0432\\u043e\\u043a\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+      "action_time": "2023-10-24T09:16:52.944Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "Открытие лаборатории",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u0433\\u043e\\u043b\\u043e\\u0432\\u043e\\u043a\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+      "action_time": "2023-10-24T09:20:52.658Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "8",
+      "object_repr": "Конференция",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+      "action_time": "2023-10-24T09:25:18.465Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "9",
+      "object_repr": "Спинальный дизрафизм веймаранеров",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+      "action_time": "2023-10-24T09:25:34.437Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "8",
+      "object_repr": "Международная научно-практическая конференция «Перспективы развития ветеринарного акушерства, гинеко",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u0433\\u043e\\u043b\\u043e\\u0432\\u043e\\u043a\", \"\\u0421\\u043e\\u0434\\u0435\\u0440\\u0436\\u0438\\u043c\\u043e\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+      "action_time": "2023-10-24T09:28:01.227Z",
+      "user": 2,
+      "content_type": 7,
+      "object_id": "36",
+      "object_repr": "Наследственные заболевания собак",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+      "action_time": "2023-10-24T09:28:15.045Z",
+      "user": 2,
+      "content_type": 7,
+      "object_id": "37",
+      "object_repr": "Наследственные заболевания кошек",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+      "action_time": "2023-10-24T09:30:36.410Z",
+      "user": 2,
+      "content_type": 7,
+      "object_id": "38",
+      "object_repr": "Окрасы собак",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+      "action_time": "2023-10-24T09:33:24.506Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "37",
+      "object_repr": "Аллели S (сплошной), s (белая пятнистость)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+      "action_time": "2023-10-24T10:41:29.881Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "38",
+      "object_repr": "Аллель KB (доминантный черный)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+      "action_time": "2023-10-24T10:44:01.224Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "39",
+      "object_repr": "Аллели EM (маска), E, e1 (рецессивный рыжий)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+      "action_time": "2023-10-24T10:49:32.091Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "40",
+      "object_repr": "Дегенеративная миелопатия",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+      "action_time": "2023-10-24T10:51:30.192Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "41",
+      "object_repr": "Дефицит пируваткиназы",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+      "action_time": "2023-10-24T10:53:27.196Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "42",
+      "object_repr": "Цистинурия В",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+      "action_time": "2023-10-24T10:54:02.311Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "43",
+      "object_repr": "Прогрессирующая атрофия сетчатки PRA-pd",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+      "action_time": "2023-10-24T10:55:24.101Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "37",
+      "object_repr": "Аллели S (сплошной), s (белая пятнистость)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+      "action_time": "2023-10-24T11:07:01.699Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "38",
+      "object_repr": "Аллель KB (доминантный черный)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+      "action_time": "2023-10-24T11:20:35.060Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "39",
+      "object_repr": "Аллели EM (маска), E, e1 (рецессивный рыжий)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+      "action_time": "2023-10-24T11:46:42.316Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "37",
+      "object_repr": "Аллели S (сплошной), s (белая пятнистость)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 4,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 5,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 5,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 5,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 5,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add пользователь",
+      "content_type": 6,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change пользователь",
+      "content_type": 6,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete пользователь",
+      "content_type": 6,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view пользователь",
+      "content_type": 6,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add Категория",
+      "content_type": 7,
+      "codename": "add_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change Категория",
+      "content_type": 7,
+      "codename": "change_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete Категория",
+      "content_type": 7,
+      "codename": "delete_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view Категория",
+      "content_type": 7,
+      "codename": "view_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add Категория",
+      "content_type": 8,
+      "codename": "add_service"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change Категория",
+      "content_type": 8,
+      "codename": "change_service"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete Категория",
+      "content_type": 8,
+      "codename": "delete_service"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view Категория",
+      "content_type": 8,
+      "codename": "view_service"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add блог",
+      "content_type": 9,
+      "codename": "add_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change блог",
+      "content_type": 9,
+      "codename": "change_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete блог",
+      "content_type": 9,
+      "codename": "delete_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view блог",
+      "content_type": 9,
+      "codename": "view_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add Заказ",
+      "content_type": 10,
+      "codename": "add_order"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change Заказ",
+      "content_type": 10,
+      "codename": "change_order"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete Заказ",
+      "content_type": 10,
+      "codename": "delete_order"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view Заказ",
+      "content_type": 10,
+      "codename": "view_order"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add application form",
+      "content_type": 11,
+      "codename": "add_applicationform"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change application form",
+      "content_type": 11,
+      "codename": "change_applicationform"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete application form",
+      "content_type": 11,
+      "codename": "delete_applicationform"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view application form",
+      "content_type": 11,
+      "codename": "view_applicationform"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add application",
+      "content_type": 11,
+      "codename": "add_application"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change application",
+      "content_type": 11,
+      "codename": "change_application"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete application",
+      "content_type": 11,
+      "codename": "delete_application"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view application",
+      "content_type": 11,
+      "codename": "view_application"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can change status",
+      "content_type": 10,
+      "codename": "set_submit"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can publish posts",
+      "content_type": 11,
+      "codename": "set_published"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can change status",
+      "content_type": 10,
+      "codename": "set_status"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "users",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "main",
+      "model": "category"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "main",
+      "model": "service"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "blog",
+      "model": "blog"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "order",
+      "model": "order"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "order",
+      "model": "application"
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$TbI144RvgVLUlvyFXPUPM9$4Fj36z64d3eD78MJr0++LSKZQDinbtz3Ar/fXvy4S7U=",
+      "is_superuser": true,
+      "is_staff": true,
+      "date_joined": "2023-10-18T09:26:53.524Z",
+      "email": "dipnoe@gmail.com",
+      "phone": 653530306,
+      "first_name": "Admin",
+      "last_name": "Admin",
+      "avatar": "",
+      "city": null,
+      "last_login": "2023-10-24",
+      "approval_code": null,
+      "is_active": true,
+      "is_approved": false,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "main.category",
+    "pk": 36,
+    "fields": {
+      "name": "Наследственные заболевания собак",
+      "description": "Все доступные исследования для собак."
+    }
+  },
+  {
+    "model": "main.category",
+    "pk": 37,
+    "fields": {
+      "name": "Наследственные заболевания кошек",
+      "description": "Все доступные исследования для кошек."
+    }
+  },
+  {
+    "model": "main.category",
+    "pk": 38,
+    "fields": {
+      "name": "Окрасы собак",
+      "description": "Исследования направленные на выявление носительства тех или иных окрасов у собак. При выборе нескольких окрасов действуют скидки, дополнительную информацию можно узнать, связавшись с нами."
+    }
+  },
+  {
+    "model": "main.service",
+    "pk": 37,
+    "fields": {
+      "name": "Аллели S (сплошной), s (белая пятнистость)",
+      "price": 3000,
+      "description": "Ген MITF\r\nВсе породы\r\nАллели S > s\r\nБелая пятнистость, пайболд",
+      "is_available": true,
+      "preview": "service/собака_породы_такса_видно_полностью_окрас_белый_пятнистый.jpg",
+      "category": 38
+    }
+  },
+  {
+    "model": "main.service",
+    "pk": 38,
+    "fields": {
+      "name": "Аллель KB (доминантный черный)",
+      "price": 3000,
+      "description": "Описание\r\nДля локуса К описано три аллеля: KB, kbr и ky.\r\nДоминантная форма, аллель KB (доминантный черный) - запрещает проявление другого локуса окраса – Агути (А), и приводит к формированию в зонах пигментации сплошного эумеланинового (черного или коричневого) цвета.\r\nРецессивная форма аллель ky – также одновременно является аллелем дикого типа. Эту форму можно назвать предковой для других аллелей данной серии. Только наличие одновременно двух копий ky (генотип ky/ky) дает разрешение на образование нормальных паттернов окраса агути.\r\nАллель kbr по степени доминирования занимает промежуточное положение между аллелями KB и ky и ответственен за формирование тигрового окраса. При наличии хотя бы одной копии аллеля kbr и отсутствии аллеля KB (генотипы kbr/kbr и kbr/ky) собака имеет черные или коричневые тигровины на фоне окраса агути, который в свою очередь определяется генотипом по локусу А. Важно отметить, что проявление локусов К и А возможно только в том случае, если собака не имеет генотипа е/е по локусу Е.\r\nТаблица возможных окрасов:\r\nKB/KB сплошной окрас в зонах пигментации\r\nKB/kbr сплошной окрас в зонах пигментации\r\nKB/ky сплошной окрас в зонах пигментации\r\nkbr/kbr тигровины на фоне окраса агути (соболиного, черно-подпалого, чепрачного)\r\nkbr/ky тигровины на фоне окраса агути (соболиного, черно-подпалого, чепрачного)\r\nky/ky окрас агути, отсутствие тигровин\r\n\r\nРазработанный ДНК-тест позволяет выявить аллель доминантного черного окраса KB. Достоверного способа выявления аллели kbr в настоящее время не разработано.",
+      "is_available": true,
+      "preview": "service/абсолютно_черный_русский_терьер_лежит_видно_полностью_1.jpg",
+      "category": 38
+    }
+  },
+  {
+    "model": "main.service",
+    "pk": 39,
+    "fields": {
+      "name": "Аллели EM (маска), E, e1 (рецессивный рыжий)",
+      "price": 3500,
+      "description": "Ген MC1R\r\nВсе породы\r\nАллели EM > E > e1",
+      "is_available": true,
+      "preview": "service/рыжая_собака_породы_кане_корсо_с_короткими_обрезанными_ушами_и_короткой_мордой.jpg",
+      "category": 38
+    }
+  },
+  {
+    "model": "main.service",
+    "pk": 40,
+    "fields": {
+      "name": "Дегенеративная миелопатия",
+      "price": 2500,
+      "description": "Тяжёлое прогрессирующее нейродегенеративное заболевание, приводящее к параличу задних конечностей. Вызывается нарушением проводимости мотонейронов спинного мозга вследствие дегенерации нервных окончаний. Анализ включает в себя исследование мутации, обнаруженной только в породе Бернский зенненхунд.\r\n\r\nСимптоматика\r\n\r\nДиагностика\r\nХарактерные изменения в поведении и физиологии собаки.\r\n\r\nАутосомно-рецессивный характер наследования",
+      "is_available": true,
+      "preview": "",
+      "category": 36
+    }
+  },
+  {
+    "model": "main.service",
+    "pk": 41,
+    "fields": {
+      "name": "Дефицит пируваткиназы",
+      "price": 2500,
+      "description": "Описание\r\nПируваткиназа является одним из ключевых ферментов эритроцитов, дефицит которого может приводить к развитию анемии и смерти собак в возрасте до пяти лет. При недостаточном количестве фермента в организме продолжительность жизни эритроцитов значительно сокращается, и, следовательно, уменьшается их количество в кровотоке.\r\n\r\nСимптоматика\r\nОсновные симптомы: пониженная физическая активность животного, снижение аппетита, бледные слизистые, потеря веса, замедление роста и шумы в сердце. Накопленное железо, которое высвобождается из красных клеток крови в результате их разрушения, так же повреждает печень и костный мозг, что приводит к печеночной недостаточности и образованию аномально плотной костной ткани.\r\n\r\nДиагностика\r\nХарактерные изменения в поведении и физиологии собаки.",
+      "is_available": true,
+      "preview": "",
+      "category": 36
+    }
+  },
+  {
+    "model": "main.service",
+    "pk": 42,
+    "fields": {
+      "name": "Цистинурия В",
+      "price": 2000,
+      "description": "Наследственное заболевание, вызванное нарушением транспорта аминокислоты цистина в почечных канальцах. В норме цистин фильтруется в почках и реабсорбируется в канальцах, что приводит к небольшому количеству цистина в моче.\r\nКошки с цистинурией неправильно реабсорбируют цистин (и некоторые другие аминокислоты) в почечных канальцах, в результате чего моча содержит аномально высокие уровни цистина. Цистин нерастворим в моче с нейтральным pH или в кислой среде, поэтому избыток цистина в моче приводит к образованию кристаллов, что, в свою очередь, может спровоцировать образование цистиновых конкрементов (камней) в почках и/или мочевом пузыре.\r\nКошки, с цистинурией, страдают повторяющимися воспалениями мочевыводящих путей и подвержены риску их закупорки, которая, если ее не лечить быстро, может привести к почечной недостаточности, разрыву мочевого пузыря и смерти.",
+      "is_available": true,
+      "preview": "",
+      "category": 37
+    }
+  },
+  {
+    "model": "main.service",
+    "pk": 43,
+    "fields": {
+      "name": "Прогрессирующая атрофия сетчатки PRA-pd",
+      "price": 2000,
+      "description": "Прогрессирующая атрофия сетчатки (Progressive Retinal Atrophy, PRA) – общее название группы заболеваний сетчатки глаза, вызывающих поражение фоторецепторных клеток (палочек и колбочек) вплоть до их гибели. PRA-pd относится к ранней форме атрофии сетчатки, имеющей аутосомно-рецессивный тип наследования. В возрасте двух-трех недель можно наблюдать ослабление световых рефлексов зрачков. Сначала теряется ночное зрение, к возрасту 16-17 недель происходит почти полная потеря зрения. PRA-pd не лечится. ДНК-тест показывает наличие и количество нарушенных копий гена, что позволяет определить больных и здоровых кошек, а также идентифицировать здоровых носителей. Носители имеют PRA-pd в скрытом виде и могут передавать заболевание потомкам, сами будучи здоровыми. Заболевание характерно для Персидской кошки и родственных пород.",
+      "is_available": true,
+      "preview": "",
+      "category": 37
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 6,
+    "fields": {
+      "title": "Открытие лаборатории",
+      "body": "Сегодня в мире науки произошло знаковое событие – открыта первая лаборатория, посвященная исследованию генетики мелких домашних животных!\r\n\r\nПод руководством ведущего генетика, мы будем фокусироваться на изучении геномов собак, кошек, попугаев и других мелких животных. Это открывает перед нами потрясающие перспективы для понимания наследственных особенностей, здоровья и поведения наших верных спутников.\r\n\r\nЛаборатория оборудована последними технологическими достижениями и обещает создать мост между наукой и практическими применениями для улучшения жизни домашних животных и их владельцев. Она также предоставит базу для исследований в области зоологии и медицины.\r\n\r\nPawGene уже привлек внимание многих исследователей и животноводов, и мы с нетерпением ждем, какие секреты генетики друзей человека она поможет раскроить в ближайшие годы.",
+      "preview": "blog/лаборатория_молекулярной_генетики_мелких_домашних_животных.jpg",
+      "create_date": "2023-10-24T09:05:51.430Z",
+      "tag": "event",
+      "views_count": 1
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 7,
+    "fields": {
+      "title": "Гайд по сбору слюны",
+      "body": "Для процедуры забора буккального эпителия у животного, вам потребуется следующее:\r\n\r\nПриготовьте материалы: Вам понадобятся чистые мочалки или ватные тампоны, перчатки и прозрачные пластиковые пакеты с маркировкой.\r\n\r\nПодготовьте животное: Убедитесь, что ваше животное находится в спокойном состоянии. При необходимости, попросите кого-то помочь вам удержать его.\r\n\r\nЗабор образца: Наденьте перчатки и аккуратно откройте рот животного. Осторожно вытерайте внутреннюю сторону его щеки мочалкой или тампоном в течение нескольких секунд. Это позволит собрать буккальные клетки, содержащие ДНК.\r\n\r\nПоместите в пакет: Положите использованный мочалку или тампон в пластиковый пакет, который следует маркировать с именем и датой сбора образца.\r\n\r\nХраните образец: Храните пакет в морозильнике при низкой температуре до момента, когда образец будет передан на анализ.\r\n\r\nЭтот метод безопасен для животного и предоставляет генетический материал, который может использоваться для различных исследований, включая тестирование на наследственные заболевания и определение родственных связей.",
+      "preview": "blog/у_кошки_водят_палочкой_во_рту_чтобы_взять_слюну_на_анализ.jpg",
+      "create_date": "2023-10-24T09:13:58.637Z",
+      "tag": "useful material",
+      "views_count": 0
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 8,
+    "fields": {
+      "title": "Международная научно-практическая конференция «Перспективы развития ветеринарного акушерства, гинеко",
+      "body": "12-13 октября 2023 г. на базе «Московской государственной академии ветеринарной медицины и биотехнологии — МВА имени К. И. Скрябина» состоялась Международная научно-практическая конференция «Перспективы развития ветеринарного акушерства, гинекологии и биотехники репродукции животных».",
+      "preview": "blog/photo_2023-10-24_16-20-15.jpg",
+      "create_date": "2023-10-24T09:20:52.657Z",
+      "tag": "research",
+      "views_count": 1
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 9,
+    "fields": {
+      "title": "Спинальный дизрафизм веймаранеров",
+      "body": "Аутосомно-рецессивное заболевание, приводящее к аномальному развитию спинного мозга. Клинические признаки варьируют от легких до тяжелых в зависимости от степени и локализации дефектов спинного мозга. Обычно заболевание проявляется в возрасте от 4 до 6 недель характерной кроличьей походкой, приседанием, широкой стойкой и аномальными рефлексами в задних конечностях. В некоторых случаях могут наблюдаться аномальный рост волос вдоль спины, искривление позвоночника, деформация грудины и загнутый хвост. Для диагностики пораженных собак может использоваться рентгенография и анализ спиномозговой жидкости. Клинические признаки заболевания не прогрессируют с возрастом.\r\n\r\nГен NKX2-8",
+      "preview": "blog/photo_2023-10-24_16-24-33.jpg",
+      "create_date": "2023-10-24T09:25:18.463Z",
+      "tag": "new test",
+      "views_count": 3
+    }
+  },
+  {
+    "model": "order.application",
+    "pk": 5,
+    "fields": {
+      "owner": 2,
+      "specie": "собака",
+      "breed": "колли",
+      "name": "Bob",
+      "sex": "Male",
+      "birth_date": "2003-02-27",
+      "microchip_number": null,
+      "pedigree": "",
+      "extra_information": "",
+      "create_date": "2023-10-23T06:17:00.911Z",
+      "is_submitted": false,
+      "service": []
+    }
+  },
+  {
+    "model": "order.application",
+    "pk": 6,
+    "fields": {
+      "owner": 2,
+      "specie": "кошка",
+      "breed": "Ориентальная кошка",
+      "name": "Мурёнок",
+      "sex": "Male",
+      "birth_date": "1999-11-11",
+      "microchip_number": "1337",
+      "pedigree": "",
+      "extra_information": "",
+      "create_date": "2023-10-23T06:41:03.555Z",
+      "is_submitted": false,
+      "service": []
+    }
+  },
+  {
+    "model": "order.application",
+    "pk": 7,
+    "fields": {
+      "owner": 2,
+      "specie": "кошка",
+      "breed": "Курильский бобтейл",
+      "name": "полиция",
+      "sex": "Female",
+      "birth_date": "2020-05-22",
+      "microchip_number": "9",
+      "pedigree": "",
+      "extra_information": "",
+      "create_date": "2023-10-23T06:43:23.705Z",
+      "is_submitted": true,
+      "service": []
+    }
+  },
+  {
+    "model": "order.application",
+    "pk": 8,
+    "fields": {
+      "owner": 2,
+      "specie": "собака",
+      "breed": "Японский шпиц",
+      "name": "Бугульма",
+      "sex": "Female",
+      "birth_date": "2015-08-13",
+      "microchip_number": "458093",
+      "pedigree": "",
+      "extra_information": "",
+      "create_date": "2023-10-23T06:48:18.740Z",
+      "is_submitted": true,
+      "service": []
+    }
+  }
+]
