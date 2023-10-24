@@ -12,3 +12,4 @@ class CategoryAdmin(admin.ModelAdmin):
 @admin.register(Service)
 class ServiceAdmin(admin.ModelAdmin):
     list_display = ('name', 'price', 'description', 'is_available', 'category', )
+    list_filter = ('category',)
