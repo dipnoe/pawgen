@@ -9,6 +9,17 @@ NULLABLE = {'blank': True, 'null': True}
 # Create your models here.
 
 class Blog(models.Model):
+    """
+    Model representing a blog post.
+
+    Fields:
+    - title (CharField): The title of the blog post.
+    - body (TextField): The content of the blog post.
+    - preview (ImageField): An optional preview image for the blog post.
+    - create_date (DateTimeField): The date and time when the blog post was created (auto-generated).
+    - tag (CharField with choices): The tag/category of the blog post.
+    - views_count (PositiveSmallIntegerField): The number of views for the blog post (auto-incremented).
+    """
     TAG_CHOICES = [
         ('news', 'Новости'),
         ('event', 'События'),

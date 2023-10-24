@@ -10,6 +10,7 @@ class Category(models.Model):
 
     Fields:
     - name (CharField): The name of the category.
+    - description (TextField): Description of the service. Can be NULL.
     """
     name = models.CharField(max_length=100, verbose_name='Категория')
     description = models.TextField(verbose_name='Описание', **NULLABLE)
@@ -31,12 +32,14 @@ class Service(models.Model):
     - price (PositiveSmallIntegerField): The price of the service.
     - description (TextField): Description of the service. Can be NULL.
     - is_available (BooleanField): Indicates whether the service is available.
+    - preview (ImageField): An optional preview image for the service.
     - category (ForeignKey): The category to which the service belongs.
     """
     name = models.CharField(max_length=100, verbose_name='Услуга', unique=True)
     price = models.PositiveSmallIntegerField(verbose_name='Цена')
     description = models.TextField(verbose_name='Описание', **NULLABLE)
     is_available = models.BooleanField(default=True, verbose_name='доступность')
+    preview = models.ImageField(upload_to='service/', verbose_name='Превью', **NULLABLE)
 
     category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name='Категория')
 
