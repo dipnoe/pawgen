@@ -87,7 +87,7 @@
         .blog-header-logo {
             font-family: "Playfair Display", Georgia, "Times New Roman", serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
             font-size: 2.25rem;
-        }
+        }object.pk
 
         .blog-header-logo:hover {
             text-decoration: none;
@@ -150,7 +150,7 @@
                     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                         <div class="col-6 p-4 d-flex flex-column position-static">
                             <strong class="d-inline-block mb-2 text-primary-emphasis">{{ object.tag|capfirst }}</strong>
-                            <h3 class="mb-0">{{ object.title|capfirst }}</h3>
+                            <h3 class="mb-0">{{ object.title|slice:20 }}</h3>
                             <div class="mb-1 text-body-secondary">{{ object.create_date|nice_date }}</div>
                             <p class="card-text mb-auto">{{ object.body|slice:50 }}</p>
                             <a href="{% url 'blog:blog_detail' object.pk %}"

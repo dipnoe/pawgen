@@ -30,8 +30,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  height: 32rem;
+  width: 100%; /* Изменено на width вместо min-width */
+  height: 200%; /* Изменено на height вместо 32rem */
+  object-fit: cover;
 }
 
 
