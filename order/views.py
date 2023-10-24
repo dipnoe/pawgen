@@ -15,7 +15,6 @@ class ApplicationCreateView(LoginRequiredMixin, CreateView):
     form_class = ApplicationForm
     success_url = reverse_lazy('order:application_list')
 
-
     def form_valid(self, form):
         form.instance.owner = self.request.user
         return super().form_valid(form)
@@ -29,7 +28,6 @@ class ApplicationUpdateView(LoginRequiredMixin, UpdateView):
 
 class ApplicationListView(LoginRequiredMixin, ListView):
     model = Application
-    print(Application.service)
 
     def get_queryset(self):
         queryset = super().get_queryset()
