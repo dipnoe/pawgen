@@ -14,7 +14,7 @@
                     <p>{{ object.description }}</p>
                 </div>
                 <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
-                    <a class="btn btn-success btn-lg" href="#" role="button">Добавить в корзину</a>
+                    <a class="btn btn-success btn-lg" href="{% url 'order:application_create' %}" role="button">Заказать</a>
                     <a class="btn btn-secondary" href="{% url 'main:service_category_list' object.category_id %}" role="button">Закрыть</a>
                 </div>
             </div>

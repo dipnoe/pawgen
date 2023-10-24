@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, UpdateView
 
-from config.settings import EMAIL_HOST_USER, EMAIL_HOST_PASSWORD
+from config.settings import EMAIL_HOST_USER, EMAIL_HOST_PASSWORD, EMAIL_HOST
 from users.forms import UserRegisterForm, UserProfileForm
 from users.models import User
 
@@ -17,14 +17,18 @@ class RegisterView(CreateView):
     success_url = reverse_lazy('users:login')
 
     def form_valid(self, form):
-        self.object = form.save()
-        send_mail(
-            subject='Почта подтверждена',
-            message='Добро пожаловать на PawGene! Вы успешно зарегистрировались на нашем сайте.',
-            from_email=EMAIL_HOST_USER,
-            recipient_list=[self.object.email]
-        )
-        return super().form_valid(form)
+        print(EMAIL_HOST_USER, EMAIL_HOST_PASSWORD, EMAIL_HOST)
+        try:
+            send_mail(
+                subject='Почта подтверждена',
+                message='Добро пожаловать на PawGene! Вы успешно зарегистрировались на нашем сайте.',
+                from_email=EMAIL_HOST_USER,
+                recipient_list=[form.cleaned_data['email']]
+            )
+        except Exception as e:
+            print(f'Не удалось отправить сообщение. Возникла ошибка {e}')
+        finally:
+            return super().form_valid(form)
 
 
 class ProfileView(LoginRequiredMixin, UpdateView):

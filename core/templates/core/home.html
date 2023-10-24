@@ -26,7 +26,7 @@
                             <div class="carousel-caption text-left">
                                 <h1>{{ object.name }}</h1>
                                 <p>{{ object.description|slice:200 }}</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Заказать</a></p>
+                                <p><a class="btn btn-lg btn-primary" href="{% url 'order:application_create' %}">Заказать</a></p>
                             </div>
                         </div>
                     </div>
