@@ -19,6 +19,6 @@ class ApplicationForm(StyleFormMixin, ModelForm):
     def clean_microchip_number(self):
         cleaned_data = self.cleaned_data.get('microchip_number')
         if cleaned_data:
-            if not cleaned_data.isdigit() and len(cleaned_data) != 15:
+            if not cleaned_data.isdigit() or len(cleaned_data) != 15:
                 raise forms.ValidationError('Неккоректный номер чипа. Чип должен состоять из 15 цифр')
             return cleaned_data
