@@ -1,0 +1,78 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row-cols-md-1 mt-5">
+            <h1>Мои заявки</h1>
+            <p class="lead">Чтобы подтвердить заявку, нажмите кнопку <span class="badge badge-info">Подтвердить</span>,
+                и наш
+                менеджер свяжется с Вами в ближайшее время.</p>
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        В заказе {{ object_list|length }} позиций:
+                    </div>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Имя животного</th>
+                            <th scope="col">Порода</th>
+                            <th scope="col">Анализ</th>
+                            <th scope="col">Стоимость</th>
+                            <th scope="col"></th>
+                        </tr>
+                        </thead>
+                        {% for object in object_list %}
+                            <tbody>
+                            <tr>
+                                <th scope="row">{{ forloop.counter }}</th>
+                                <td>{{ object.name |capfirst }}</td>
+                                <td> {% if object.breed is not None %}
+                                    {{ object.breed|capfirst }} {% else %} Не указана {% endif %}</td>
+                                <td>{% if object.service.all %}
+                                    {% for service in object.service.all %}
+                                        {{ service.name|capfirst }};
+                                    {% endfor %}
+                                {% else %}
+                                    Не указана
+                                {% endif %}</td>
+                                <td>
+                                    {{ object.full_price }}
+                                </td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        {% for order in orders %}
+                                            {% if order.status == 'Submitted' %}
+                                                <a class="btn btn-info"
+                                                   href="{% url 'order:application_confirm' object.pk %}">Подтвердить</a>
+                                            {% else %}
+                                                <a class="btn btn-success">Подтверждено</a>
+                                            {% endif %}
+                                        {% endfor %}
+                                        <a class="btn btn-outline-secondary"
+                                           href="{% url 'order:application_update' object.pk %}">Изменить</a>
+                                        <a class="btn btn-outline-danger"
+                                           href="{% url 'order:application_delete' object.pk %}">Удалить</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        {% endfor %}
+                        {#                        <tfoot>#}
+                        {#                        <tr>#}
+                        {#                            <th class="text">Сумма заказа</th>#}
+                        {#                            <th class="text"></th>#}
+                        {#                            <th class="text"></th>#}
+                        {#                            <th class="text"></th>#}
+                        {#                            <th class="text">#</th>#}
+                        {#                        </tr>#}
+                        {#                        </tfoot>#}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
