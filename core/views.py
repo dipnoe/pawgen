@@ -15,8 +15,8 @@ def contacts(request):
 
 
 def home(request):
-    blog_top = Blog.objects.all().values('title', 'body')[:3]
-    service = Service.objects.filter(is_available=True)
+    blog_top = Blog.objects.all().values('title', 'body', 'preview', 'pk', )[:3]
+    service = Service.objects.filter(is_available=True, category_id=38)
     context = {
         'blog': blog_top,
         'service': service

@@ -1,9 +1,9 @@
+from django.contrib.auth.decorators import permission_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, UpdateView, ListView, DeleteView
 
-from main.models import Service
 from order.forms import ApplicationForm
 from order.models import Order, Application
 from django.shortcuts import get_object_or_404
@@ -14,6 +14,7 @@ class ApplicationCreateView(LoginRequiredMixin, CreateView):
     model = Application
     form_class = ApplicationForm
     success_url = reverse_lazy('order:application_list')
+
 
     def form_valid(self, form):
         form.instance.owner = self.request.user
@@ -36,14 +37,14 @@ class ApplicationListView(LoginRequiredMixin, ListView):
         return queryset
 
 
-class ApplicationDeleteView(DeleteView):
+class ApplicationDeleteView(LoginRequiredMixin, DeleteView):
     model = Application
     success_url = reverse_lazy('order:application_list')
 
 
+@permission_required('order.set_status')
 def confirm(request, pk):
     object = get_object_or_404(Application, pk=pk)
-
     new_order = Order(
         user=object.owner,
         status='Submitted',
@@ -52,5 +53,9 @@ def confirm(request, pk):
     new_order.save()
     new_order.service.set(object.service.all())
     new_order.save()
+
+    if new_order.status == 'Submitted':
+        object.is_submitted = True
+        object.save()
 
     return redirect(reverse_lazy('order:application_list'))
